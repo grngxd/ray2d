@@ -16,6 +16,8 @@ const (
 	Normal     messageType = "normal"
 	Connect    messageType = "connect"
 	Disconnect messageType = "disconnect"
+	Closed     messageType = "closed"
+	Heartbeat  messageType = "heartbeat"
 )
 
 func New(content string, t messageType) *Message {
