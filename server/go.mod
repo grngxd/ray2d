@@ -8,4 +8,7 @@ require (
 	github.com/gen2brain/raylib-go/raylib v0.0.0-20231118125650-a1c890e8cbfc // indirect
 	go.mongodb.org/mongo-driver v1.14.0
 	golang.org/x/sys v0.14.0 // indirect
+	shared v0.0.0
 )
+
+replace shared => ../shared

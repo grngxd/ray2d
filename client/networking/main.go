@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net"
-	"ray2d/networking/messages"
+	"shared/networking/messages"
 )
 
 type Connection struct {
