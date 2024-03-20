@@ -5,7 +5,8 @@ import (
 )
 
 type Message struct {
-	Content string      `bson:"content"`
+	// content has any type of data
+	Content interface{} `bson:"content"`
 	Type    messageType `bson:"type"`
 }
 
@@ -20,7 +21,7 @@ const (
 	Heartbeat  messageType = "heartbeat"
 )
 
-func New(content string, t messageType) *Message {
+func New(content interface{}, t messageType) *Message {
 	return &Message{
 		Content: content,
 		Type:    t,
