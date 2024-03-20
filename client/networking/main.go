@@ -65,7 +65,6 @@ func (c *Connection) sendHeartbeat() {
 			c.Disconnect()
 			return
 		}
-		fmt.Println("Sent heartbeat to server")
 	}
 }
 
@@ -95,7 +94,6 @@ func (c *Connection) receiveHeartbeat() {
 
 func (c *Connection) Disconnect() {
 	if c.connection == nil {
-		fmt.Println("No connection to disconnect")
 		return
 	}
 
