@@ -110,6 +110,7 @@ func main() {
 					if time.Since(c.heartbeat) > 5*time.Second {
 						log.Println("Client timed out:", addr)
 						delete(Connections, addr)
+						continue
 					}
 				}
 			}
